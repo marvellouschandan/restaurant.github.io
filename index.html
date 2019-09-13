@@ -3,9 +3,11 @@
 				<title>Restaurant</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1">
 				<link href="CSS/navigation.css" rel="stylesheet">
+				<link href="CSS/login_container.css" rel="stylesheet">
 				<link href="CSS/find_restaurant.css" rel="stylesheet">
 				<link href="CSS/imageslider.css" rel="stylesheet">
 				<link href="CSS/services.css" rel="stylesheet">
+				<script src="script/login_container.js"></script>
 				<style>
 						body{
 								font-family:sans-serif;
@@ -66,7 +68,7 @@
 										<ul>
 												<li><a href="#contact">Contact us</a></li>
 										</ul>
-										<li id="login_button"><a href="#">Login</a></li>
+										<li id="login_button" ><a href="#"  onclick="div_show()">Login</a></li>
 										</ul>
 								</ul>
 						</nav>
@@ -75,8 +77,18 @@
 				<br>
 				<br>
 
-				<div name="login-container">
-						<div name="login-box">
+				<div id="login-container">
+						<div id="login-box">
+							<button id="cross" onclick='div_hide()'>X</button>
+    						<form action="#" name ="form" method="post" id="form">
+    							<h1>LOGIN</h1>
+    							<hr>
+    							<p>Email</p>
+    							<input class="input-box" type="Email" name="username" placeholder="Email Address" required>
+								<p>Password</p>
+								<input class="input-box" type="password" name="password" placeholder="Password" required>
+								<button id="continue-button" type="submit" onclick='div_hide()' >login</button>
+							</form>
 						</div>
 				</div>
 
