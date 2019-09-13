@@ -1,0 +1,162 @@
+<html>
+		<head>
+				<title>Restaurant</title>
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+				<link href="CSS/navigation.css" rel="stylesheet">
+				<link href="CSS/find_restaurant.css" rel="stylesheet">
+				<link href="CSS/imageslider.css" rel="stylesheet">
+				<link href="CSS/services.css" rel="stylesheet">
+				<style>
+						body{
+								font-family:sans-serif;
+								margin:0;
+								background-image:url("https://draxe.com/wp-content/uploads/2016/12/Benefits-of-Dark-Chocolate_FB.jpg");
+								background-size:cover;
+								color:white;
+						}
+
+
+						.heading{
+								font-size:40px;
+								text-align:center;
+						}
+
+
+						.footer{
+								bottom:0;
+								text-align:center;
+								background-color:rgb(0, 0, 0);
+						}
+
+						.container{
+								width:23%; /* Image and container width should be same */
+								float:left;
+								margin-left:15px;
+						}
+						.container img{
+								height:350px;
+								width:100%;
+						}
+
+						.container img:hover{
+								transform:scale(1.1);
+								box-shadow:1px 1px 1px 1px #8b3e10;
+						}
+						.container .text{
+								text-align:center;
+								font-size:20px;
+						}
+				</style>
+		</head>
+		<body>
+				<div>
+						<nav class="navigation">
+								<ul>
+										<li><a href="#home">Home</a></li>
+										<li><a href="#specialities">Dishes</a>
+										<ul>
+												<li><a href="#">Ice-Cream</li>
+												<li><a href="#">Donuts</li>
+												<li><a href="#">Sandwich</li>
+												<li><a href="#">Cakes</li>
+										</ul>
+										</li>
+										<li><a href="#location">Location</a></li>
+										<li><a href="#help">Help</a>
+										<ul>
+												<li><a href="#contact">Contact us</a></li>
+										</ul>
+										<li id="login_button"><a href="#">Login</a></li>
+										</ul>
+								</ul>
+						</nav>
+				</div>
+
+				<br>
+				<br>
+
+				<div name="login-container">
+						<div name="login-box">
+						</div>
+				</div>
+
+				<h1 class="heading">Find a nearby Restaurant..</h1>
+				<div class="find_restaurant">
+						Enter your location <input type="text" placeholder="Search.." list="suggestions">
+						<datalist id="suggestions">
+					    <option value="Dhanbad">
+					    <option value="Delhi">
+					    <option value="Mumbai">
+					    <option value="Goa">
+					    <option value="Kolkata">
+					</datalist>
+
+				</div>
+				<br>
+				<br>
+
+				<h1 class="heading">Our Dishes..</h1>
+				<div style="margin-left:10px;">
+						<div class="container">
+								<div class="img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Glace_%C3%A0_la_pistache-Lipari.jpg/1200px-Glace_%C3%A0_la_pistache-Lipari.jpg" /></div>
+								<div class="text">Delicious Ice-Cream</div>
+						</div>
+
+						<div class="container">
+								<div class="img"><img src="https://pinchofyum.com/wp-content/uploads/gingerbread-donuts-side-3.jpg" /></div>
+								<div class="text">Tasty Donuts</div>
+						</div>
+
+						<div class="container">
+								<div class="img"><img src="https://i.pinimg.com/736x/09/5f/a4/095fa4d12ddfc6f5d6071d0875156a69--sandwich-croque-monsieur-grilled-cheeses.jpg" /></div>
+								<div class="text">Sandwich</div>
+						</div>
+
+						<div class="container">
+								<div class="img"><img src="https://www.magnoliabakery.com/wp-content/uploads/2015/06/cakesheet-2-img.jpg" /></div>
+								<div class="text">Cakes</div>
+						</div>
+				</div>
+				<br>
+				<br>
+
+				<h1 class="heading" style="margin:10px;">Our Specialities</h1>
+
+				<div class="slider-frame">
+						<div class="slide-images">
+								<div class="image-container">
+										<img src="https://cdn.cnn.com/cnnnext/dam/assets/171027052520-processed-foods-super-tease.jpg">
+								</div>
+								<div class="image-container">
+										<img src="https://hdwallpapers.move.pk/wp-content/uploads/2015/02/burger.jpg">
+								</div>
+								<div class="image-container">
+										<img src="https://blog.hdwallsource.com/wp-content/uploads/2015/01/italian-food-wallpaper-hd-44478-45604-hd-wallpapers.jpg">
+								</div>
+						</div>
+				</div>
+				<br>
+				<br>
+
+				<h1 class="heading">Services</h1>
+				<div class="services">
+						<div id="div1">
+								<div class="text_title">No Minimum Order</div>
+								<div class="text_description">Wanna buy Only a Ladoo, We'll deliver it</div>
+						</div>
+						<div id="div2">
+								<div class="text_title">Live Order Tracking</div>
+								<div class="text_description">Get Real-Time location where your order reached</div>
+						</div>
+						<div id="div3">
+								<div class="text_title">Lighting-Fast Delivery</div>
+								<div class="text_description">Get delivery within 30 minutes</div>
+						</div>
+						<div id="div4">
+								<div class="text_title">24X7 Customer Service</div>
+								<div class="text_description">Need Help, We'll be there to help you at any time</div>
+						</div>
+				</div>
+				<footer class="footer"> &copy; 2019 Chandan Kumar </footer>
+		</body>
+</html>
