@@ -74,8 +74,8 @@
    	display: none;
    	background-color: rgb(0, 0, 0, 0.8);
    	position: fixed;  /* To fill the container to the whole screen */
-   	top:0; /*  */
-   
+   	top:0; /* To cover top gap */
+	z-index:4; /* To float the container above images else it flow down images on scrolling */
    }
 
 #cross {
