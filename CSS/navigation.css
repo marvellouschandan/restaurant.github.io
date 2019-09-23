@@ -1,7 +1,7 @@
 
 						.navigation{
-								margin-top:0.5vw;
-								height:5vh;
+								margin-top:10px;
+								height:40px;
 								background-color:black;
 								opacity:0.6;
 								width:100%;
@@ -15,7 +15,7 @@
 
 						.navigation > ul > li{
 								float:left; /*This is important if I want menu to be at bottom and not side*/
-								margin-top:0.4vw;
+								margin-top:10px;
 								background-color:black;
 						}
 
@@ -27,12 +27,12 @@
 
 						.navigation a{
 								display:block;
-								margin:0.1vh 0.5vh;
+								margin:2px 3px;
 								text-decoration:none;
-								font-size:3.2vh;
+								font-size:20px;
 								color:white;
 								text-align:center;
-								width:17vw;
+								width:100px;
 						}
 
 						.navigation a:hover{
