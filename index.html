@@ -33,6 +33,9 @@
 								color: silver;
 								background-color:#100e17;
 						}
+						.footer a{
+							    color:silver;
+						}
 
 						.container{
 								width:23%; /* Image and container width should be same */
@@ -73,7 +76,7 @@
 										<ul>
 												<li><a href="#contact">Contact us</a></li>
 										</ul>
-										<li id="login_button" ><a href="#"  onclick="div_show()">Login</a></li>
+										<li id="login_button" ><a href="#"  onclick="div_login_show()">Login</a></li>
 										</ul>
 								</ul>
 						</nav>
@@ -84,17 +87,17 @@
 
 				<div id="login-container">
 						<div id="login-box">
-							<button id="cross" onclick='div_hide()'>X</button>
+							<button id="cross" onclick='div_login_hide()'>X</button>
     						<form action="#" name ="form" method="post" id="form">
     							<h1>LOGIN</h1>
     							<p>Email</p>
     							<input class="input-box" type="Email" name="username" placeholder="Email Address" required>
 								<p>Password</p>
 								<input class="input-box" type="password" name="password" placeholder="Password" required>
-								<button id="continue-button" type="submit" onclick='div_hide()' >LOGIN</button>
+								<button id="continue-button" type="submit" onclick='div_login_hide()' >LOGIN</button>
 								<br>
 								<p style="font-size: 20px; font-family: sans-serif; color: black;">
-									Don't have an Account ! <a href="#" onclick="div_hide() ,div_signup_show()">Sign Up</a>
+									Don't have an Account ! <a href="#" onclick="div_signup_show()">Sign Up</a>
 								</p>
 							</form>
 						</div>
@@ -116,7 +119,7 @@
 								<span>OR</span>
 							    </h3>
 								<button class="signup-button" type="submit" onclick='div_signup_hide()' style="margin-top: 8px;"><img src="fb.webp" height="25px" style="float:left;">CONTINUE WITH FACEBOOK</button>
-								<button id ="back_button" onclick='div_signup_hide() div_show()'><</button>
+								<button id ="back_button" onclick='div_back_button_hide()'><</button>
 							</form>
 						</div>
 				</div>
@@ -193,7 +196,7 @@
 						</div>
 						<div id="div3">
 								<center><img src="https://cdn1.iconfinder.com/data/icons/perfomance-1/100/6-512.png" width="120" height="100" style="margin-top:10px; margin-bottom:10px;"></center>
-								<div class="text_title">Lighting-Fast Delivery</div>
+								<div class="text_title">Lightning-Fast Delivery</div>
 								<div class="text_description">Get delivery within 30 minutes</div>
 						</div>
 						<div id="div4">
@@ -208,7 +211,7 @@
     					<a href="#terms" style="float:middle;">Terms</a>                       
     					<a href="#privacy" style="float: right;">Privacy</a>
     				</div>
-					&copy; 2019 Chandan | Akshay
+					&copy; 2019 <a href="https://github.com/marvellouschandan">Chandan | <a href="https://github.com/Rajputakshay">Akshay
 				</footer>
 		</body>
 </html>
