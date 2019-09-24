@@ -7,6 +7,7 @@
 				<link href="CSS/find_restaurant.css" rel="stylesheet">
 				<link href="CSS/imageslider.css" rel="stylesheet">
 				<link href="CSS/services.css" rel="stylesheet">
+				<link href="CSS/signup_container.css" rel="stylesheet">
 				<script src="script/login_container.js"></script>
 				<style>
 						body{
@@ -29,7 +30,8 @@
 								padding-top:20px;
 								bottom:0;
 								text-align:center;
-								background-color:rgb(0, 0, 0);
+								color: silver;
+								background-color:#100e17;
 						}
 
 						.container{
@@ -85,12 +87,36 @@
 							<button id="cross" onclick='div_hide()'>X</button>
     						<form action="#" name ="form" method="post" id="form">
     							<h1>LOGIN</h1>
-    							<hr>
     							<p>Email</p>
     							<input class="input-box" type="Email" name="username" placeholder="Email Address" required>
 								<p>Password</p>
 								<input class="input-box" type="password" name="password" placeholder="Password" required>
-								<button id="continue-button" type="submit" onclick='div_hide()' >login</button>
+								<button id="continue-button" type="submit" onclick='div_hide()' >LOGIN</button>
+								<br>
+								<p style="font-size: 20px; font-family: sans-serif; color: black;">
+									Don't have an Account ! <a href="#" onclick="div_hide() ,div_signup_show()">Sign Up</a>
+								</p>
+							</form>
+						</div>
+				</div>
+
+				<div id="signup-container">
+						<div id="signup-box">
+							<button id="cross" onclick='div_signup_hide()'>X</button>
+    						<form action="#" name ="form" method="post" id="form">
+    							<h1>SIGN UP</h1>
+    							<p>Name</p>
+    							<input class="input-box" type="text" name="name" placeholder="Name" required>
+    							<p>Email</p>
+    							<input class="input-box" type="Email" name="username" placeholder="Email Address" required>
+								<p>Password</p>
+								<input class="input-box" type="password" name="password" placeholder="Password" required>
+								<button class="signup-button" type="submit" onclick='div_signup_hide()' >SIGN UP</button>
+								<h3>
+								<span>OR</span>
+							    </h3>
+								<button class="signup-button" type="submit" onclick='div_signup_hide()' style="margin-top: 8px;"><img src="fb.webp" height="25px" style="float:left;">CONTINUE WITH FACEBOOK</button>
+								<button id ="back_button" onclick='div_signup_hide() div_show()'><</button>
 							</form>
 						</div>
 				</div>
@@ -176,6 +202,13 @@
 								<div class="text_description">Need Help, We'll be there to help you at any time</div>
 						</div>
 				</div>
-				<footer class="footer"> &copy; 2019 Chandan Kumar </footer>
+				<footer class="footer">
+					<div id="div0">
+						<a href="#aboutus" style="float :left;">About us</a>                              
+    					<a href="#terms" style="float:middle;">Terms</a>                       
+    					<a href="#privacy" style="float: right;">Privacy</a>
+    				</div>
+					&copy; 2019 Chandan | Akshay
+				</footer>
 		</body>
 </html>
