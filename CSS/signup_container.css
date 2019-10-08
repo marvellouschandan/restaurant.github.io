@@ -8,19 +8,19 @@
     border:2px solid grey;
     position: relative;
     margin:5% auto;
-    height: 560px;
+    height: 520px;
     width:450px;
     box-sizing: border-box;
     background:white;
     border-radius: 7px;
-   }
+}
 
 .signup-button {
     height: 42px;
-    margin-left:47px;
-    width: 350px;
-    margin-top: 25px;
-    background-color: grey;
+    margin-left:53px;
+    width: 338px;
+    margin-top: 0;
+    background-color: darkorange;
     color:white;
     font-size: 20px;
     cursor: pointer;
@@ -28,22 +28,8 @@
     outline: none;
     font-family: sans-serif;
 
-   }
+}
 
- h3 {
-    border-bottom: 1px solid grey;
-    color: grey;
-    font-size: 18px;
-    margin-left: 35px;
-    margin-right: 35px;
-    text-align: center;
-}
-h3 span {
-    background:  white;
-    padding: 0 15px;
-    position: relative;
-    top: 10px;
-}
 
 #signup-container {
     width:100%;
@@ -54,9 +40,9 @@ h3 span {
     position: fixed;  /* To fill the container to the whole screen */
     top:0; /* To cover top gap */
     z-index:4; /* To float the container above images else it flow down images on scrolling */
-   }
+}
 
-   #back_button{
+#back_button{
     position: absolute;
     left: 4px;
     top:5px;
@@ -68,4 +54,31 @@ h3 span {
     border:none;
     font-weight: normal;
     font-size: 20px;
-   }
+}
+
+#signup-box .input{
+  position: relative;
+  width: 22vw;
+  margin: 25px auto;
+  
+}
+  
+.icons{
+    position: absolute;
+    display: block;
+    color: dimgrey;
+    left: 10px;
+    top: 14px;
+    font-size: 17px;
+    
+}
+  
+  .fields{
+    width: 22vw;
+    padding: 10px 5px 10px 40px;
+    display: block;
+    border: 1px solid silver;
+    outline: none;
+    border-radius: 3px;
+    font-size: 20px;
+}

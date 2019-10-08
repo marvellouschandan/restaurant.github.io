@@ -7,7 +7,9 @@
 				<link href="CSS/find_restaurant.css" rel="stylesheet">
 				<link href="CSS/imageslider.css" rel="stylesheet">
 				<link href="CSS/services.css" rel="stylesheet">
+				<link href="CSS/testimonials.css" rel="stylesheet">
 				<link href="CSS/signup_container.css" rel="stylesheet">
+   				<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 				<script src="script/login_container.js"></script>
 				<style>
 						body{
@@ -44,7 +46,7 @@
 								margin-left:15px;
 						}
 						.container img{
-								height:350px;
+								height:320px;
 								width:100%;
 								transition:all 0.2s ease-in-out;
 						}
@@ -61,23 +63,23 @@
 		</head>
 		<body>
 				<div class="navigation">
-						
 								<ul>
-										<li><a href="#home">Home</a></li>
-										<li><a href="#specialities">Menu</a>
+									<li><a href="#home">Home</a></li>
+									<li><a href="#specialities">Menu</a>
 										<ul>
-												<li><a href="#">Ice-Cream</li>
-												<li><a href="#">Donuts</li>
-												<li><a href="#">Sandwich</li>
-												<li><a href="#">Cakes</li>
+											<li><a href="#">Chinese</li>
+											<li><a href="#">South Indian</li>
+											<li><a href="#">Italian</li>
+											<li><a href="#">North Indian</li>
 										</ul>
-										</li>
-										<li><a href="#location">Blog</a></li>
-										<li><a href="#help">Help</a>
+									</li>
+									<li><a href="#location">Blog</a></li>
+									<li><a href="#help">Help</a>
 										<ul>
-												<li><a href="#contact">Contact us</a></li>
-										</ul></li>
-										<li id="login_button" ><a href="#"  onclick="div_login_show()">Login</a></li>
+											<li><a href="#contact">Contact us</a></li>
+										</ul>
+									</li>
+									<li id="login_button" ><a href="#"  onclick="div_login_show()">Login</a><li>
 								</ul>
 				</div>
 
@@ -89,14 +91,26 @@
 							<button id="cross" onclick='div_login_hide()'>X</button>
     						<form action="#" name ="form" method="post" id="form">
     							<h1>LOGIN</h1>
-    							<p>Email</p>
-    							<input class="input-box" type="Email" name="username" placeholder="Email Address" required>
-								<p>Password</p>
-								<input class="input-box" type="password" name="password" placeholder="Password" required>
+    							<hr>
+    							<div class="input">
+    								<input class="fields"  type="Email" name="username" placeholder="Email Address" required>
+    								<span class="icons"><i class="fas fa-envelope"></i></span>
+    							</div>
+    							<div class="input" style="margin-bottom: 0;">
+									<input class="fields" id = "password" type="password" name="password" placeholder="Password" required>
+									<span class="icons"><i class="fas fa-key"></i></span>
+									<i id="eye" style="color: grey; position: absolute; top:14px; left: 310px;" class="fas fa-eye" onclick="showPassword()"></i>
+								</div>
+								<p style="font-size: 15px; margin-left:260px;"><a href="#forget">Forgot Password ?</a>
+								</p>
 								<button id="continue-button" type="submit" onclick='div_login_hide()' >LOGIN</button>
+								<h3>
+								<span>OR</span>
+							    </h3>
+								<button class="login-fb-button" type="submit" onclick='div_login_hide()' style="margin-top: 8px;"><img src="fb.webp" height="25px" style="float:left;">CONTINUE WITH FACEBOOK</button>
 								<br>
-								<p style="font-size: 20px; font-family: sans-serif; color: black;">
-									Don't have an Account ! <a href="#" onclick="div_signup_show()">Sign Up</a>
+								<p style="font-size: 20px; font-family: sans-serif; margin-left: 70px;margin-bottom: 10px;color: black;">
+									Don't have an Account ? <a href="#" onclick="div_signup_show()">Sign Up</a>
 								</p>
 							</form>
 						</div>
@@ -107,17 +121,28 @@
 							<button id="cross" onclick='div_signup_hide()'>X</button>
     						<form action="#" name ="form" method="post" id="form">
     							<h1>SIGN UP</h1>
-    							<p>Name</p>
-    							<input class="input-box" type="text" name="name" placeholder="Name" required>
-    							<p>Email</p>
-    							<input class="input-box" type="Email" name="username" placeholder="Email Address" required>
-								<p>Password</p>
-								<input class="input-box" type="password" name="password" placeholder="Password" required>
-								<button class="signup-button" type="submit" onclick='div_signup_hide()' >SIGN UP</button>
-								<h3>
-								<span>OR</span>
-							    </h3>
-								<button class="signup-button" type="submit" onclick='div_signup_hide()' style="margin-top: 8px;"><img src="fb.webp" height="25px" style="float:left;">CONTINUE WITH FACEBOOK</button>
+    							<hr>
+    							<div class="input">
+    								<input class="fields" type="text" name="name" placeholder="Name" required>
+    								<span class="icons"><i class="fas fa-user"></i></span>
+    							</div>
+    							<div class="input">
+    								<input class="fields" type="tel" name="telephone" placeholder="Phone" required>
+    								<span class="icons"><i class="fas fa-mobile"></i></span>
+    							</div>
+    							<div class="input">
+    								<input class="fields"  type="Email" name="username" placeholder="Email Address" required>
+    								<span class="icons"><i class="fas fa-envelope"></i></span>
+    							</div>
+    							<div class="input">
+									<input class="fields" id = "signUpPassword" type="password" name="password" placeholder="Create a Password" required>
+									<span class="icons"><i class="fas fa-key"></i></span>
+									<i id="myeye" style="color: grey; position: absolute; top:14px; left: 310px;" class="fas fa-eye" onclick="showmePassword()"></i>
+								</div>
+								<div class="input">
+									<input style="background-color:white; width:14px; height:14px; "type="checkbox" name="checkbox"/><label style="color: black;">By signing up, I agree to your Terms of Use and Privacy Policy.</label> 
+								</div>
+								<button class="signup-button" type="submit" onclick="div_signup_hide()">SIGN UP</button>
 								<button id ="back_button" onclick='div_back_button_hide()'><</button>
 							</form>
 						</div>
@@ -168,7 +193,7 @@
 				<div class="slider-frame">
 						<div class="slide-images">
 								<div class="image-container">
-										<img src="https://cdn.cnn.com/cnnnext/dam/assets/171027052520-processed-foods-super-tease.jpg">
+										<img src="slider_pic1.jpg">
 								</div>
 								<div class="image-container">
 										<img src="https://hdwallpapers.move.pk/wp-content/uploads/2015/02/burger.jpg">
@@ -180,6 +205,55 @@
 				</div>
 				<br>
 				<br>
+				<div class="testimonials">
+      				<div class="inner">
+      				<h1 class="heading" style="color: white;">Happy Customers</h1>
+      					<div class="row">
+      						<div class="col">
+      							<div class="testimonial">
+      								<img src="https://media.licdn.com/dms/image/C5103AQFhc1hz3UMUPw/profile-displayphoto-shrink_800_800/0?e=1576108800&v=beta&t=--l_2kB5fEhktOsWgxXk8HIq8oUPebGSm04TWklsGnI">
+      							<div class="name">Vaibhav Sharma</div>
+      							<div class="stars">
+      								<i class="fas fa-star"></i>
+      								<i class="fas fa-star"></i>
+      								<i class="fas fa-star"></i>
+      								<i class="fas fa-star"></i>
+      								<i class="fas fa-star"></i>
+      							</div>
+      							<p>"One of the best sites serving hot and delicious food.Reasonable for the common man to afford food a door step without giving more money ."</p>
+      						</div>
+      					</div>
+      				<div class="col">
+      						<div class="testimonial">
+      							<img src="https://media.licdn.com/dms/image/C5103AQFUFs771BJzWA/profile-displayphoto-shrink_800_800/0?e=1576108800&v=beta&t=I_kULlLYjvWiEpxB450bKgx5QhkOe-a6D0B-H6aYdJk">
+      							<div class="name">Harmeet Singh</div>
+      							<div class="stars">
+      								<i class="fas fa-star"></i>
+      								<i class="fas fa-star"></i>
+      								<i class="fas fa-star"></i>
+      								<i class="fas fa-star"></i>
+      								<i class="fas fa-star"></i>
+      							</div>
+      							<p>"Got food on time . They always deliver a proper fresh, hygiene , healthier and tastier food with proper packing."</p>
+      						</div>
+      					</div>
+      					<div class="col">
+      						<div class="testimonial">
+      							<img src="https://media.licdn.com/dms/image/C5103AQGpaAtOhtIp-g/profile-displayphoto-shrink_800_800/0?e=1576108800&v=beta&t=OGDH_xi8t8mB2o7HbMPZKhWm50GySfxdS45xubmlstc">
+      							<div class="name">Abhishek Kumar</div>
+      							<div class="stars">
+      								<i class="fas fa-star"></i>
+      								<i class="fas fa-star"></i>
+      								<i class="fas fa-star"></i>
+      								<i class="fas fa-star"></i>
+      								<i class="far fa-star"></i>
+      							</div>
+      							<p>" Best site for ordering food online with a wide variety of dishes. Very happy with service and support that they provide while getting the order."</p>
+      						</div>
+      					</div>
+           </div>
+      </div>
+</div>
 
 				<div style="width: 100%; height: 10vh; padding-top: 1px; background-color: #100e17;">
 					<h1 class="heading">Services</h1>

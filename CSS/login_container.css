@@ -8,19 +8,19 @@
 	  border:2px solid grey;
 	  position: relative;
 	  margin:10% auto;
-	  height: 410px;
+	  height: 525px;
 	  width:450px;
     box-sizing: border-box;
     background: white;
     border-radius: 7px;
-  }
+}
 
 #continue-button {
-   	height: 55px;
-   	margin-left:47px;
-   	width: 350px;
-    margin-top: 25px;
-   	background:grey;
+   	height: 52px;
+   	margin-left:53px;
+   	width: 338px;
+    margin-top: 3px;
+   	background:darkorange;
    	color:white;
    	font-size: 25px;
     cursor: pointer;
@@ -28,15 +28,12 @@
    	outline: none;
    	font-family: sans-serif;
 
-  }
+}
 
 a:link{
     text-decoration:none;
-  }
+}
 
-#login-container p a{
-    color: black;
-  }
  
 #login-button{
  	  padding: 5px;
@@ -59,17 +56,11 @@ a:link{
  	  background: black;
 }
 
-.input-box {
-    margin:0 46px;
-   	padding: 4px;
-   	width:350px;
-   	height:35px;
-   	border: 1px solid black;
-   	font-family:sans-serif;
-    background:none;
-    color: black;
-    outline:none;
-    font-size: 20px;
+#login-box .input{
+    position: relative;
+    width: 22vw;
+    margin: 30px auto;
+  
 }
 
 #login-container {
@@ -95,10 +86,32 @@ a:link{
     font-size: 18px;
 }
 
-p {
-    font-size: 25px;
-    font-family:Arial;
-    margin-left: 46px;
-    margin-bottom: 10px;
-    color: black;
+h3 {
+    border-bottom: 1px solid grey;
+    color: grey;
+    font-size: 18px;
+    margin-left: 37px;
+    margin-right: 37px;
+    text-align: center;
 }
+h3 span {
+    background:  white;
+    padding: 0 15px;
+    position: relative;
+    top: 10px;
+}
+
+.login-fb-button {
+    height: 52px;
+    margin-left:53px;
+    width: 338px;
+    margin-top: 25px;
+    background-color: #1a538a;
+    color:white;
+    font-size: 20px;
+    cursor: pointer;
+    border:none;
+    outline: none;
+    font-family: sans-serif;
+
+   }
