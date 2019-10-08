@@ -40,11 +40,32 @@
 							    color:silver;
 						}
 
-						.container{
-								width:23%; /* Image and container width should be same */
-								float:left;
-								margin-left:15px;
+						.container-row{
+								display:flex;
+								flex-wrap:wrap;
+								justify-content:center;
 						}
+
+						.container{
+								flex:23%; /* Image and container width should be same */
+								max-width:23%;
+								margin-left:5px;
+								margin-right:5px;
+						}
+
+						@media screen and (max-width: 960px){
+							.container{
+								flex:100%;
+								max-width:80%;
+							}
+						}
+						@media screen and (max-width: 600px){
+							.container{
+								flex:100%;
+								max-width:100%;
+							}
+						}
+
 						.container img{
 								height:320px;
 								width:100%;
@@ -164,7 +185,7 @@
 				<br>
 
 				<h1 class="heading">Our Dishes..</h1>
-				<div style="margin-left:10px;width:100%">
+				<div class="container-row">
 						<div class="container">
 								<div class="img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Glace_%C3%A0_la_pistache-Lipari.jpg/1200px-Glace_%C3%A0_la_pistache-Lipari.jpg" /></div>
 								<div class="text">Delicious Ice-Cream</div>
